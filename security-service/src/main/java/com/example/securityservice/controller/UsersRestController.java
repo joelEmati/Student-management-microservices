@@ -2,13 +2,13 @@
 package com.example.securityservice.controller;
 
 
-import com.example.securityservice.entities.User;
-import com.example.securityservice.repository.UserRepository;
+import com.example.securityservice.entities.Users;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.example.securityservice.repository.UsersRepository;
 
 /**
  *
@@ -16,22 +16,22 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-public class UserRestController {
-    private UserRepository  userRepository;
+public class UsersRestController {
+    private UsersRepository  userRepository;
 
-    public UserRestController(UserRepository userRepository) {
+    public UsersRestController(UsersRepository userRepository) {
         this.userRepository = userRepository;
     }
     
     
     
   @GetMapping("/users") 
-  public List<User> userList() {
+  public List<Users> userList() {
         return userRepository.findAll();
     }
   
   @GetMapping("/users/{id}") 
-   public User userById(@PathVariable Long id) {
+   public Users userById(@PathVariable Long id) {
         return userRepository.findById(id).get();
     }
   
@@ -43,7 +43,7 @@ public class UserRestController {
   
   
    @PostMapping("/uusers") 
-    public void updateUser(User User) {
+    public void updateUser(Users User) {
        userRepository.save(User);
     } 
   

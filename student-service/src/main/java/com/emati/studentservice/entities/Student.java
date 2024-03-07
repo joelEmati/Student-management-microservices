@@ -1,6 +1,6 @@
 package com.emati.studentservice.entities;
 
-import com.emati.studentservice.models.User;
+import com.emati.studentservice.models.Users;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,6 +23,6 @@ public class Student implements Serializable {
     private String prenom;  
     private String tel;      
     @Transient
-    private User user;
-    private int userid; 
+    private Users users;
+    private int usersid; 
 }

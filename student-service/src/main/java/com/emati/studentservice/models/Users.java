@@ -1,4 +1,4 @@
-package com.emati.teacherservice.models;
+package com.emati.studentservice.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +10,7 @@ import lombok.*;
  * @author emati
  */
 @Getter @Setter @Builder @NoArgsConstructor @AllArgsConstructor
-public class User {
+public class Users {
     @Id 
     private String username;
     private String password;    

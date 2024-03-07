@@ -1,6 +1,6 @@
 package com.emati.teacherservice.entities;
 
-import com.emati.teacherservice.models.User;
+import com.emati.teacherservice.models.Users;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,6 +22,6 @@ public class Teacher implements Serializable {
     private String nom;
     private String prenom;  
     @Transient
-    private User user;
-    private int userid;   
+    private Users users;
+    private int usersid;   
 }

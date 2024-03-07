@@ -1,13 +1,13 @@
 
 package com.example.securityservice.repository;
 
-import com.example.securityservice.entities.User;
+import com.example.securityservice.entities.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author emati
  */
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UsersRepository extends JpaRepository<Users, Long> {
     
 }
