@@ -30,13 +30,13 @@ public class ModuleRestController {
     }
   
   @GetMapping("/modules/{id}") 
-   public Module moduleeById(@PathVariable String code) {
+   public Module moduleeById(@PathVariable Long code) {
         return moduleRepository.findById(code).get();
     }
   
   
    @PostMapping("/modules/{id}") 
-   public void removeById(@PathVariable String code) {
+   public void removeById(@PathVariable Long code) {
        moduleRepository.deleteById(code);
     } 
   

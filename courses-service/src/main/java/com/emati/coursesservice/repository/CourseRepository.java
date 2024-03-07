@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
  * @author emati
  */
 @Repository
-public interface CourseRepository extends JpaRepository<Course, String> {
+public interface CourseRepository extends JpaRepository<Course, Long> {
     
 }

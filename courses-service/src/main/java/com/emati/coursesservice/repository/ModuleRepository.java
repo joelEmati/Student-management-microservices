@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
  * @author emati
  */
 @Repository
-public interface ModuleRepository extends JpaRepository<Module, String> {
+public interface ModuleRepository extends JpaRepository<Module,Long> {
     
 }

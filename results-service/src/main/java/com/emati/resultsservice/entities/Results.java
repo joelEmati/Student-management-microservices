@@ -25,5 +25,5 @@ public class Results implements Serializable {
     @Transient
     private Course course;
     private Long studentid;
-    private String courseid;
+    private Long courseid;
 }
