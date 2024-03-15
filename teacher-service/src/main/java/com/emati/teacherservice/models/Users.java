@@ -12,6 +12,7 @@ import lombok.*;
 @Getter @Setter @Builder @NoArgsConstructor @AllArgsConstructor
 public class Users {
     @Id 
+    
     private String username;
     private String password;    
     private  int role;    

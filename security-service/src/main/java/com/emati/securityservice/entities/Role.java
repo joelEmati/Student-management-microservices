@@ -1,5 +1,5 @@
 
-package com.example.securityservice.entities;
+package com.emati.securityservice.entities;
 
 /**
  *

@@ -29,13 +29,13 @@ public class CourseRestController {
     }
   
   @GetMapping("/courses/{id}") 
-   public Course courseById(@PathVariable String code) {
+   public Course courseById(@PathVariable Long code) {
         return courseRepository.findById(code).get();
     }
   
   
    @PostMapping("/courses/{id}") 
-   public void removeById(@PathVariable String code) {
+   public void removeById(@PathVariable Long code) {
        courseRepository.deleteById(code);
     } 
   

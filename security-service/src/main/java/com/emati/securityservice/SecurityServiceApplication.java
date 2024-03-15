@@ -1,8 +1,8 @@
-package com.example.securityservice;
+package com.emati.securityservice;
 
-import com.example.securityservice.entities.Role;
-import com.example.securityservice.entities.Users;
-import com.example.securityservice.repository.UsersRepository;
+import com.emati.securityservice.entities.Role;
+import com.emati.securityservice.entities.Users;
+import com.emati.securityservice.repository.UsersRepository;
 import java.util.List;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

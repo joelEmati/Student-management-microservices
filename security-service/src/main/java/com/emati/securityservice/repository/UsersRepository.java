@@ -1,7 +1,7 @@
 
-package com.example.securityservice.repository;
+package com.emati.securityservice.repository;
 
-import com.example.securityservice.entities.Users;
+import com.emati.securityservice.entities.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
